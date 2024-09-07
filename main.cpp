@@ -1,6 +1,7 @@
 //Gabriel A. Sanchez Rivera, GabrielSR23, 801238372
 #include <iostream>
-#include <iomanip> // Used for setwidth and setprecision.
+#include <iomanip> // Used for setw and setprecision.
+#include <string> // Used for variable movie name.
 using namespace std;
 
 int main(){
@@ -11,16 +12,16 @@ int main(){
     // Declare variables of the program
     int adult_tickets, child_tickets;
     double gross_profit, net_profit, distributors_profit;
-    char movie_name;
+    string movie_name;
 
     // Ask for user data
-    cout << "Enter the name of the movie: " << endl;
-    cin >> movie_name;
+    cout << "Enter the name of the movie: ";
+    getline(cin, movie_name);
 
-    cout << "Enter the amount of adult tickets sold: " << endl;
+    cout << "Enter the amount of adult tickets sold: ";
     cin >> adult_tickets;
-    
-    cout << "Enter the amount of child tickets sold: " << endl;
+
+    cout << "Enter the amount of child tickets sold: ";
     cin >> child_tickets;
 
     // Calculate the Gross profit and Net profit
@@ -31,11 +32,10 @@ int main(){
     distributors_profit = gross_profit - net_profit; //Calculates the difference from the gross profit and the net profit.
 
     // Display 
-    cout << adult_tickets << endl;
+    cout << movie_name << endl;
     cout << child_tickets << endl;
     cout << gross_profit << endl;
     cout << net_profit << endl;
     cout << distributors_profit << endl;
 return 0;
 }
-
