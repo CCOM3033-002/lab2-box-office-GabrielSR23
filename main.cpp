@@ -36,12 +36,12 @@ int main(){
 
     // Display the results of the program.
     cout << setprecision(2) << fixed;
-    cout << "Movie name: " << setw(width) movie_name << endl;
+    cout << "Movie name: " << setw(width) << movie_name << endl;
     cout << "Adult Tickets Sold: " << setw(width) << adult_tickets << endl;
     cout << "Child Tickets Sold: " << setw(width) << child_tickets << endl;
     cout << "Gross Box Profit: " << setw(width) << gross_profit << endl;
     cout << "Net Box Profit: " << setw(width) << net_profit << endl;
-    cout << "Distributors Profit: " <<  setw(width) << distributors_profit << endl;
+    cout << "Amount Paid To Distributor: " << setw(width) << distributors_profit << endl;
 
 return 0;
 }
