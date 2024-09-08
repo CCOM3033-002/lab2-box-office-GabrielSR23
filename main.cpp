@@ -31,11 +31,17 @@ int main(){
     // Calculate the Distributors profit
     distributors_profit = gross_profit - net_profit; //Calculates the difference from the gross profit and the net profit.
 
-    // Display 
-    cout << movie_name << endl;
-    cout << child_tickets << endl;
-    cout << gross_profit << endl;
-    cout << net_profit << endl;
-    cout << distributors_profit << endl;
+    // Set width
+    const int width = 10;
+
+    // Display the results of the program.
+    cout << setprecision(2) << fixed;
+    cout << "Movie name: " << setw(width) movie_name << endl;
+    cout << "Adult Tickets Sold: " << setw(width) << adult_tickets << endl;
+    cout << "Child Tickets Sold: " << setw(width) << child_tickets << endl;
+    cout << "Gross Box Profit: " << setw(width) << gross_profit << endl;
+    cout << "Net Box Profit: " << setw(width) << net_profit << endl;
+    cout << "Distributors Profit: " <<  setw(width) << distributors_profit << endl;
+
 return 0;
 }
