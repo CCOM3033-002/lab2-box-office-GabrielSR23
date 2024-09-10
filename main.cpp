@@ -15,7 +15,7 @@ int main(){
     string movie_name;
 
     // Ask for user data
-    cout << "Enter the name of the movie: ";
+    cout << "\nEnter the name of the movie: ";
     getline(cin, movie_name);
 
     cout << "Enter the amount of adult tickets sold: ";
@@ -35,13 +35,14 @@ int main(){
     const int width = 10;
 
     // Display the results of the program.
-    cout << setprecision(2) << fixed;
-    cout << "Movie name: " << setw(width) << movie_name << endl;
-    cout << "Adult Tickets Sold: " << setw(width) << adult_tickets << endl;
-    cout << "Child Tickets Sold: " << setw(width) << child_tickets << endl;
-    cout << "Gross Box Profit: " << setw(width) << gross_profit << endl;
-    cout << "Net Box Profit: " << setw(width) << net_profit << endl;
-    cout << "Amount Paid To Distributor: " << setw(width) << distributors_profit << endl;
+
+    cout << setprecision(2) << fixed; // Sets the precision for the decimals after the dot.
+    cout << "\nMovie name: " << setw(17) << '"' << movie_name << '"' << endl;
+    cout << "Adult Tickets Sold: " << setw(13) << adult_tickets << endl;
+    cout << "Child Tickets Sold: " << setw(13) << child_tickets << endl;
+    cout << "Gross Box Profit: " << setw(11) << "$" << setw(9) << gross_profit << endl;
+    cout << "Net Box Profit: " << setw(13) << "$" << setw(9) << net_profit << endl;
+    cout << "Amount Paid To Distributor: " << "$" << setw(9) << distributors_profit << endl;
 
 return 0;
 }
