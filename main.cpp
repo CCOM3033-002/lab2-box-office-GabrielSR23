@@ -37,7 +37,7 @@ int main(){
     // Display the results of the program.
 
     cout << setprecision(2) << fixed; // Sets the precision for the decimals after the dot.
-    cout << "\nMovie name: " << setw(17) << '"' << movie_name << '"' << endl;
+    cout << "\nMovie name: " << setw(17) << "\"" << movie_name << "\"" << endl;
     cout << "Adult Tickets Sold: " << setw(13) << adult_tickets << endl;
     cout << "Child Tickets Sold: " << setw(13) << child_tickets << endl;
     cout << "Gross Box Profit: " << setw(11) << "$" << setw(9) << gross_profit << endl;
